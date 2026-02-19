@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cine Anime</title>
+		<link rel="stylesheet" href="css/style.css" />
+
+		<!-- Basic Icons -->
+		<link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet" />
+		<!-- Filled Icons -->
+		<link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet" />
+		<!-- Brand Icons -->
+		<link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<!-- Google fonts - Inter -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<nav>
+			<a href=""><span style="color: #ff0040">CINE</span>ANIME</a>
+
+			<ul id="navMenu">
+				<li><a href="#">Início</a></li>
+				<li><a href="#">Animes</a></li>
+				<li><a href="#">Calendário</a></li>
+			</ul>
+
+			<div class="search-box">
+				<img src="assets/icons/search.png" alt="search-icon" />
+				<input type="text" id="search" placeholder="search" />
+				<ul class="search-results" id="searchResults"></ul>
+			</div>
+
+			<div class="menu-toggle" id="menuToggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</nav>
+
+		<!-- carousel -->
+		<header class="carousel">
+			<!-- list item -->
+			<div class="list">
+				<div class="item ativo">
+					<div class="content">
+						<h1>One Piece</h1>
+						<div class="details">
+							<span>1999</span>
+							<span>13+</span>
+							<span>1000+ EP</span>
+							<span>Ação</span>
+						</div>
+						<p>
+							Acompanhe Monkey D. Luffy e sua tripulação dos Piratas do Chapéu de Palha em uma jornada
+							épica pelos mares em busca do lendário tesouro One Piece. Uma aventura repleta de amizade,
+							batalhas emocionantes e sonhos que transcendem os oceanos.
+						</p>
+
+						<div class="buttons">
+							<button class="download-btn">Download</button>
+							<button class="trailer-btn">Trailer</button>
+						</div>
+						<div class="vid-box">
+							<video
+								controls
+								id="vid"
+								class="vid-trailer"
+								src="assets/video/one-piece.mp4"
+								type="video/mp4"
+							></video>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="content">
+						<h1>Demon Slayer</h1>
+						<div class="details">
+							<span>2019</span>
+							<span>14+</span>
+							<span>44 EP</span>
+							<span>Ação</span>
+						</div>
+						<p>
+							Tanjiro Kamado embarca em uma jornada perigosa para encontrar a cura para sua irmã Nezuko,
+							transformada em demônio. Com sua espada e determinação inabalável, ele enfrenta demônios
+							terríveis enquanto busca vingança e...
+						</p>
+
+						<div class="buttons">
+							<button class="download-btn">Download</button>
+							<button class="trailer-btn">Trailer</button>
+						</div>
+						<div class="vid-box">
+							<video
+								controls
+								id="vid"
+								class="vid-trailer"
+								src="assets/video/demon-slayer.mp4"
+								type="video/mp4"
+							></video>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="content">
+						<h1>Jujutsu Kaisen</h1>
+						<div class="details">
+							<span>2020</span>
+							<span>16+</span>
+							<span>48 EP</span>
+							<span>Sobrenatural</span>
+						</div>
+						<p>
+							Yuji Itadori, um estudante com força sobre-humana, engole um dedo amaldiçoado do Rei das
+							Maldições Sukuna para salvar seus amigos. Agora hospedeiro de uma entidade maligna, ele
+							ingressa na Escola de Feitiçaria.
+						</p>
+
+						<div class="buttons">
+							<button class="download-btn">Download</button>
+							<button class="trailer-btn">Trailer</button>
+						</div>
+						<div class="vid-box">
+							<video
+								controls
+								id="vid"
+								class="vid-trailer"
+								src="assets/video/jujutsu.mp4"
+								type="video/mp4"
+							></video>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- list thumnail -->
+			<div class="thumbnail">
+				<div class="item">
+					<img src="assets/image/2.png" />
+					<div class="thum-content">
+						<div class="title">One piece</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="assets/image/4.png" />
+					<div class="thum-content">
+						<div class="title">Demon Slayer</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="assets/image/6.png" />
+					<div class="thum-content">
+						<div class="title">Jujutsu Kaisen</div>
+					</div>
+				</div>
+				<i class="arrow-left bx bx-chevron-left"></i>
+				<i class="arrow-right bx bx-chevron-right"></i>
+			</div>
+		</header>
+
+		<script src="js/index.js"></script>
+	</body>
+</html>
